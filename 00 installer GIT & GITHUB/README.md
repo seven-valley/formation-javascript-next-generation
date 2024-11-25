@@ -1,6 +1,6 @@
 # Installer GIT
 https://git-scm.com/  
-<img src="../z-imggit.png" width="500">  
+<img src="../z-img/git.png" width="500">  
 
 ```
 git config --global user.name "Mona Lisa"
