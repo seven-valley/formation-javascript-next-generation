@@ -47,18 +47,18 @@ html de base :
  <body>
 	<div class="container">
 		<div><img src="img/4.webp"></div>
-    </div>
+  </div>
 	<script src="jeux.js"></script>
 </body>
 ```
 
- Selectionner une tuile une tuile
+ Selectionner une tuile une tuile  
+ <code>class="green"</code>
  ```html
  <body>
 	<div class="container">
 			<div class="green"><img src="img/0.webp"></div>
-
-    </div>
+  </div>
 	<script src="jeux.js"></script>
 </body>
 ```
