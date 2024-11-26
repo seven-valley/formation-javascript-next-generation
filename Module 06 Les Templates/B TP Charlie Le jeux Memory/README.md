@@ -20,7 +20,7 @@ contenant 2 fois des entiers de 0 à 11
 - Relancer la partie  
 
 
-**tableau 1 : de 11 entier**  
+**tableau 1 : de 12 entier**  
 | **indice** | 0 | 1 | 2 |3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
 |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |:-: |
 | **valeur** | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |  
