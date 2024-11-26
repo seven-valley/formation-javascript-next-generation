@@ -73,7 +73,7 @@ function melanger(tab) {
       x = Math.floor(Math.random() * tab.length);
     } while (tab2[x] != undefined);
     // tant que l'emplacement n'est pas vide
-
+	tab2[x]= tab[i];
   }
   
   return tab2;
