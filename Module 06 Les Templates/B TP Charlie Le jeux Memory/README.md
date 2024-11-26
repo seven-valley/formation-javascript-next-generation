@@ -37,6 +37,7 @@ html de base :
 ```html
 <body>
 	<div class="container">
+    <!-- Inserer les balises ICI -->
 	</div>
 	<script src="jeux.js"></script>
 </body>
