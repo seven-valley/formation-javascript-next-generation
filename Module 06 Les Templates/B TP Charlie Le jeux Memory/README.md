@@ -61,3 +61,22 @@ html de base :
 	<script src="jeux.js"></script>
 </body>
 ```
+
+La fonction pour mélanger un tableau :heart_eyes::
+```js
+//-----------------------------------------------
+function melanger(tab) {
+  let tab2 = [];
+  for (let i = 0; i < tab.length; i++) {
+    do {
+      // je genere un nb alea de 0 à taille du tableau
+      x = Math.floor(Math.random() * tab.length);
+    } while (tab2[x] != undefined);
+    // tant que l'emplacement n'est pas vide
+
+  }
+  
+  return tab2;
+}
+//-----------------------------------------------
+```
