@@ -5,7 +5,7 @@
 ![alt text](tpc.webp)
   
 ## Créer un jeux pour téléphone portable !
-
+a
 - Créer un tableau 1 de 12 entier (de 0 à 11)    
 - Créer un tableau 2 : d'entier d'une longueur de 24   
 contenant 2 fois des entiers de 0 à 11
