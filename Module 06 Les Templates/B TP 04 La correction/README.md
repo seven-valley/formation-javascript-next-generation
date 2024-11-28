@@ -95,3 +95,76 @@ document.getElementById("btnAjouter").onclick = () => {
 };
 
 ```
+
+# Correction avec l'attribut data-indice et SANS maquette bootstrap
+```html
+<!-- table>thead>tr>th*3^^tbody>tr>td*3 -->
+<!-- table>thead>tr>th*3 -->
+ <input id="fruit">
+ <button id="btnAjouter">Ajouter</button>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Fruit</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="myTbody"></tbody>
+</table>
+<template id="myTr">
+    <tr>
+        <td></td>
+        <td>
+            <button>Effacer</button>
+        </td>
+    </tr>
+</template>
+
+<script src="tp4-partie2.js" defer></script>
+```
+
+**JS**
+```js
+/*
+ <tr data-indice="0">
+    <td></td>
+    <td>
+        <button>Effacer</button>
+    </td>
+</tr> 
+*/
+
+let fruits = [];
+
+//function afficheHTML(){
+const afficheHTML = () => {
+  const myTbody = document.getElementById("myTbody");
+  const template = document.getElementById("myTr");
+  myTbody.innerHTML = ""; // vider le tbody
+  let i = 0;
+  for (let f of fruits) {
+    const clone = template.content.cloneNode(true);
+    clone.querySelector("tr").setAttribute("data-indice", i);
+    clone.querySelectorAll("td")[0].textContent = f;
+    clone.querySelector("button").onclick = (event) => {
+      //const i = event.target.closest('tr').getAttribute('data-indice');
+      const i = event.target.closest("tr").dataset.indice;
+      const selecteur = event.target;
+      //let i = selecteur.closest('tr').rowIndex;
+      fruits.splice(i, 1);
+      afficheHTML();
+    };
+    myTbody.appendChild(clone);
+
+    i++;
+  }
+};
+
+document.getElementById("btnAjouter").onclick = () => {
+  const fruit = document.getElementById("fruit").value;
+  document.getElementById("fruit").value = ""; // vider input
+  fruits.push(fruit);
+  afficheHTML();
+};
+
+```
