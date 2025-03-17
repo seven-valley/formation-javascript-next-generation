@@ -2,6 +2,13 @@
 
 ![alt text](m2.webp)
 
+## littéraux de gabarit
+```js
+    const age = 17;
+    console.log(`age : ${age} ${age>=18 ? 'Bievenue' : 'Interdit'}`);
+    console.log(`age : ${age} ${age>=18 && 'C good'}`);
+```
+
 ## 11 - Les variables
 On oublie le **var** !
 ```js
