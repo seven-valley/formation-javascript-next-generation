@@ -116,4 +116,23 @@ function afficher(){
 }
 </script>
 ```
+## 18 Démo avec un formulaire
 
+```html
+<form id="myForm">
+  <input type="text" id="nom" name="nom" />
+  <button type="submit">GO</button>
+</form>
+
+<h1 id="demo">Ola</h1>
+<script>
+  const form = document.getElementById("myForm");
+  
+  form.addEventListener("submit", (event) => {
+    event.preventDefault(); // je bloque le rechargement
+    const formData = new FormData(form);
+    const nom = formData.get("nom").toUpperCase();
+    document.getElementById("demo").innerHTML=nom;
+  });
+</script>
+```
