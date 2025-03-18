@@ -123,3 +123,51 @@ if ternaire avec seulement si la contion est VRAI
 ```js
     age >= 18 && console.log('ENTREZ')
 ```
+
+
+# 6 révision fonction fléchées
+```js
+function multi1(num){
+    return num*2
+    }
+    console.log(multi1(10));
+
+    const multi2 =(num)=>{
+    return num*2
+    }
+    console.log(multi2(10));
+    
+    const multi3 = num => num*2 ;
+    console.log(multi3(10));
+```
+
+#  7 Filtrer un tableau pour créer un nouveau tableau
+```js
+   const personnes =[
+        {id:1,prenom:'BRAD',nom:'PITT' ,age:20},
+        {id:2,prenom:'TOM',nom:'CRUISE',age:14},
+        {id:3,prenom:'Angelina',nom:'PITT',age:22},
+        {id:4,prenom:'Bruce',nom:'Willis',age:15}
+    ];
+    // je veux les personnes majeur
+    const personnesMajeur = personnes.filter(p => p.age>18)
+   // const personnesMajeur = personnes.filter(p => (condition if))
+    console.log(personnesMajeur)
+/*
+personnesMajeur =[
+        {id:1,prenom:'BRAD',nom:'PITT' ,age:20},
+        {id:3,prenom:'Angelina',nom:'PITT',age:22},
+    ];
+*/
+ // trouver la famille PITT
+    const personnesFamille = personnes.filter(p => p.nom== 'PITT')
+     console.log(personnesFamille)
+    
+```
+
+# 8  trouver un objet dans un tableau en fonction de son id
+```js  
+  //p3 : id = 3
+    const p3 = personnes.find(p => p.id ==3);
+    console.log(p3);
+```
