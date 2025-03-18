@@ -44,18 +44,18 @@ Créer le tableau  **nouveauClients** à partir de personnes et clients
 utiliser <code>.filter</code> et <code>.find</code>
 ```js
     const personnes =[
-        {id:1,nom:'BRAD',prenom:'PITT'},
-        {id:2,nom:'TOM',prenom:'CRUISE'},
-        {id:3,nom:'Angelina',prenom:'Jolie'},
-        {id:4,nom:'Tom',prenom:'CRUISE'}
+        {id:1,prenom:'Brad',nom:'PITT'},
+        {id:2,prenom:'Tom',nom:'CRUISE'},
+        {id:3,prenom:'Angelina',nom:'JOLIE'},
+        {id:4,prenom:'Nicolas',nom:'CAGE'}
     ];
     const clients =[
-        {id:1,nom:'BRAD',prenom:'PITT'},
-        {id:3,nom:'Angelina',prenom:'Jolie',age:16}
+        {id:1,prenom:'Brad',nom:'PITT'},
+        {id:3,prenom:'Angelina',nom:'Jolie'}
     ];
 // const nouveauClients =[
-//         {id:2,nom:'TOM',prenom:'CRUISE'},
-//         {id:4,nom:'Tom',prenom:'CRUISE'}
+//         {id:2,prenom:'Tom',nom:'CRUISE'},
+//         {id:4,prenom:'Nicolas',nom:'CAGE'}
 //     ];
 ```
 **Excercice 2**  
@@ -63,18 +63,18 @@ Créer le tableau  **dejaClients** à partir de personnes et clients
 utiliser <code>.filter</code> et <code>.find</code>
 ```js
     const personnes =[
-        {id:1,nom:'BRAD',prenom:'PITT'},
-        {id:2,nom:'TOM',prenom:'CRUISE'},
-        {id:3,nom:'Angelina',prenom:'Jolie'},
-        {id:4,nom:'Tom',prenom:'CRUISE'}
+        {id:1,prenom:'Brad',nom:'PITT'},
+        {id:2,prenom:'Tom',nom:'CRUISE'},
+        {id:3,prenom:'Angelina',nom:'JOLIE'},
+        {id:4,prenom:'Nicolas',nom:'CAGE'}
     ];
     const clients =[
-        {id:1,nom:'BRAD',prenom:'PITT'},
-        {id:3,nom:'Angelina',prenom:'Jolie',age:16}
+        {id:1,prenom:'Brad',nom:'PITT'},
+        {id:3,prenom:'Angelina',nom:'Jolie'}
     ];
 // const dejaClients =[
-//     {id:1,nom:'BRAD',prenom:'PITT'},
-//     {id:3,nom:'Angelina',prenom:'Jolie'},
+//      {id:1,prenom:'Brad',nom:'PITT'},
+//      {id:3,prenom:'Angelina',nom:'Jolie'}
 //     ];
 ```
 
@@ -83,15 +83,15 @@ Créer le tableau  **majeurs** à partir de personnes
 utiliser <code>.fitler</code>
 ```js
         const personnes =[
-        {id:1,nom:'BRAD',prenom:'PITT',age:18},
-        {id:2,nom:'TOM',prenom:'CRUISE',age:15},
-        {id:3,nom:'Angelina',prenom:'Jolie',age:16},
-        {id:4,nom:'TOM',prenom:'CRUISE',age:61}
+        {id:1,prenom:'Brad',nom:'PITT',age:18},
+        {id:2,prenom:'Tom',nom:'CRUISE',age:15},
+        {id:3,prenom:'Angelina',nom:'JOLIE',age:16},
+        {id:4,prenom:'Nicolas',nom:'Cage',age:61}
     ];
    
 // const majeurs =[
-//     {id:1,nom:'BRAD',prenom:'PITT',age:18},
-//     {id:4,nom:'TOM',prenom:'CRUISE',age:61}
+//     {id:1,prenom:'Brad',nom:'PITT',age:18},
+//     {id:4,prenom:'Nicolas',nom:'Cage',age:61}
 //     ];
 ```
 
