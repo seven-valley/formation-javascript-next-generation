@@ -65,6 +65,8 @@
       </tr>
     </template>
 <!-- [...] -->
+```
+
 ## tp7.js
 ```js
 let series = [];
