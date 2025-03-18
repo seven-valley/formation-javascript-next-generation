@@ -2,7 +2,7 @@
 
 ![alt text](m2.webp)
 
-## littéraux de gabarit
+## 00 - littéraux de gabarit
 ```js
     const age = 17;
     console.log(`age : ${age} ${age>=18 ? 'Bievenue' : 'Interdit'}`);
