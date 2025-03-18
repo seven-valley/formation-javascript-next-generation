@@ -125,7 +125,7 @@ if ternaire avec seulement si la contion est VRAI
 ```
 
 
-# 6 révision fonction fléchées
+# 6 révision fonctions fléchées
 ```js
 function multi1(num){
     return num*2
