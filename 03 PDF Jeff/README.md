@@ -13,7 +13,12 @@
 
 ## JOUR 2
 ### MATIN
-- Module 08 - Les objets
+- Module 08 
+  - Les objets  
+  - filter()
+  - find()
+  - reduce()
+  
 ### APRES MIDI
 - Module 09 - Intérroger une API avec Fetch
 

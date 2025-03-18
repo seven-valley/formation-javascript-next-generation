@@ -164,3 +164,25 @@ const response = await fetch(url2);
 const film = await response.json();
 console.log(film);
 ```  
+
+# 9 - Afficher l'image d'un film
+
+```html
+<button id="btnGo">GO</button>
+<h1 id="titre"></h1>
+<img id="image" width="200">
+<script>
+    document.getElementById('btnGo').onclick =async ()=>{
+        const api = 'efdc2275'
+        const film = 'star'
+    const url =`http://www.omdbapi.com/?apikey=${api}&t=${film}`;
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data);
+    console.log(data.Title);
+    document.getElementById('titre').innerHTML= data.Title;
+    document.getElementById('image').setAttribute('src',data.Poster)
+    }
+    const test =async()=>{}
+</script>
+```
