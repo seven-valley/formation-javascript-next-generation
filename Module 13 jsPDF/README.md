@@ -82,7 +82,7 @@ export default function App() {
 
 ```
 
-# Correction
+# Correction react
 
 - copier dans le répertoire <code>assets</code> : logo.png
 - copier dans le répertoire <code>assets</code> : OpenSans-Regular.ttf
@@ -134,4 +134,70 @@ import open from '../assets/OpenSans-Regular.ttf'
     pdf.output('dataurlnewwindow');
     //pdf.save(`document.pdf`)
 }
+```
+
+# correction vanilla js
+```js
+
+<button id="btnPDF">Générer PDF</button>
+<script 
+src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/3.0.1/jspdf.umd.min.js" 
+integrity="sha512-ad3j5/L4h648YM/KObaUfjCsZRBP9sAOmpjaT2BDx6u9aBrKFp7SbeHykruy83rxfmG42+5QqeL/ngcojglbJw==" 
+crossorigin="anonymous" 
+referrerpolicy="no-referrer">
+</script>
+
+<script type="module">
+    // ligne manquante
+    window.jsPDF = window.jspdf.jsPDF;
+    document.getElementById('btnPDF').onclick= ()=>{
+    //console.log('pdf');
+    //var pdf = new jsPDF('p', 'pt', 'letter');
+    const pdf = new jsPDF();
+   const personnes =[
+    {prenom:'Brad',nom:'PITT' ,status:true},
+    {prenom:'Angelina',nom:'JOLIE' ,status:true},
+    {prenom:'Tom',nom:'CRUISE' ,status:true},
+    {prenom:'Bruce',nom:'WILLIS' ,status:true},
+   ]
+    pdf.addFont('./Ubuntu-Regular.ttf',"Ubuntu-Regular","normal")
+    pdf.setFont("Ubuntu-Regular")
+    pdf.addImage('./react.jpg','JPG',10,10,30,30)
+    pdf.setFontSize(50)
+   
+    pdf.text("hello world !",50,50)
+    pdf.setFontSize(12)
+   
+    let myY=113;
+    let test = true;
+    pdf.setTextColor(0, 0, 0);
+    //-------------------------------
+      personnes.map(p=>{
+      if(p.status){
+        if (test){
+          pdf.setFillColor(233,232,232);
+        }
+        else{
+          pdf.setFillColor(246,246,246);
+        }
+        
+        pdf.rect(40,myY-20,100,10,"F");
+        
+        myY+=10;
+        test = !test;
+      }
+    }) 
+    //-------------------------------
+    myY=100;
+    personnes.map(p=>{
+      if(p.status){
+      pdf.text(`${p.prenom} ${p.nom}`,50,myY)
+      myY+=10;
+      test = !test;
+    }
+    })
+    pdf.output('dataurlnewwindow');
+    }
+
+</script>
 ```
