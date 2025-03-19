@@ -188,8 +188,17 @@ let data= {
 ```js
 for (let attribut in data){
     console.log(attribut); // affiche id1 ... id2
-    console.log(attribut[data]); // affiche l'objet : {nom: "JOLIE", "prenom": "Angelina"}
+    console.log(data[attribut]); // affiche l'objet : {nom: "JOLIE", "prenom": "Angelina"}
 }
+const personnes = [];
+for (let attribut in data){
+    console.log(attribut) // id : -fsfez
+    console.log(data[attribut]) // mon objet
+    const p = data[attribut]
+    p.id = attribut
+    personnes.push(p)
+} 
+console.log(personnes)
 ```
 
 ## 32 - Deuxième possibilité :
