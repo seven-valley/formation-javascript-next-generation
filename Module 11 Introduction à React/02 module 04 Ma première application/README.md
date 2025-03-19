@@ -210,3 +210,28 @@ export default function App() {
 }
 ```
 
+# gestion de class=
+```jsx
+import { useState } from "react";
+import "./App.css";
+
+export default function App() {
+ const [etat,setEtat]=useState(true);
+  const changer =()=>{
+    setEtat(!etat)// si true Alors false et false=>true
+ }
+  return (
+    <>
+      <div className="container">
+        <button onClick={changer} className={`my3 btn ${etat ?'btn-danger':'btn-success' }`}>
+        {etat ?'OFF':'ON'}
+        </button>
+      
+        { etat ? 'Allumé': 'Eteint'}
+      </div>
+      
+      
+    </>
+  );
+}
+```
