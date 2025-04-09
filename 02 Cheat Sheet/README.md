@@ -19,7 +19,7 @@ const afficher =()=>{
 :two: **Lecture du DOM** - lecture d'une balise **input** 
 **sélecteur** + <code>.value</code>
 ```html
-<input name="nom" />
+<input id="nom" />
 ```
 ```js
 const nom = document.getElementById('nom').value;
