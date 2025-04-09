@@ -110,3 +110,15 @@ const items = [
 let totalPrice = 0;
 
 ```
+
+**Excercice 5**  
+Avec reduce filtrer les membres et les non membres
+```js
+    const personnes =[
+        {id:1,nom:'BRAD',prenom:'PITT', categ:'MEMBRE'},
+        {id:2,nom:'TOM',prenom:'CRUISE',categ:'NON MEMBRE'},
+        {id:3,nom:'Angelina',prenom:'Jolie',categ:'MEMBRE'},
+        {id:4,nom:'Bruce',prenom:'Willis',categ:'NON MEMBRE'}
+    ];
+    //const membres =[]
+```
