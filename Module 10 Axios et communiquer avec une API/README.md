@@ -184,6 +184,14 @@ let data= {
     "id3" :{nom: "JOLIE", "prenom": "Angelina"}
 }
 ```
+**Objectif :**
+```js
+let personnes= [
+    {nom: "PITT", "prenom": "Brad","id1"},
+    {nom: "CAGE", "prenom": "Nicolas","id2"},
+    {nom: "JOLIE", "prenom": "Angelina","id3"}
+]
+```
 ## 31 - Première possibilité :
 ```js
 for (let attribut in data){
